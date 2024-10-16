@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <title>Madlib Game</title>
+    </head>
+    <body>
+      <h1>Madlib Game</h1>
+      <form method="POST">
+        <label for="adj">Adjective:</label>
+        <input type="text" name="adj" id="adj" required><br><br>
+        
+        <label for="verb1">Verb 1:</label>
+        <input type="text" name="verb1" id="verb2" required><br><br>
+
+        <label for="verb2">Verb 2:</label>
+        <input type="text" name="verb2" id="verb2" required><br><br>
+        
+        <label for="verb3"Verb 3:></label>
+        <input type="text" name="verb3" id="verb3" required><br><br>
+
+        <button type="submmit">Submit</button>
+       </form>
+       
+       {% if madlib %}
+           <h2>Your madlib:</h2>
+           <p>{{ madlib }}</p>
+       {% endif %}   
+    
+</body>
+</html>
