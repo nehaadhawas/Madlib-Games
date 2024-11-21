@@ -6,6 +6,8 @@ def get_word():
     return word.upper()
 
 def play(word):
+    start_letter = [0]
+    end_letter = [-1]
     word_completion = "_" * len(word)
     guessed = False
     guessed_letters = []
@@ -13,6 +15,7 @@ def play(word):
     tries = 6
 
     print("Let's play Hangman!")
+    print(f"Hint : The word start with '{start_letter}' and end with '{end_letter}'".)
     print(f"Tries left: {tries}")
     print(word_completion)
     print("\n")
